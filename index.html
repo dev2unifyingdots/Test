@@ -4,14 +4,342 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Best Sellers</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <script src="" async defer></script>
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+        <!-- section header -->
+        <header class="flex items-center justify-between mb-6 lg:mb-8">
+            <h2 id="best-sellers-heading" class="text-2xl lg:text-3xl font-extrabold tracking-tight">Best seller</h2>
+            <a class="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors flex items-center gap-1"
+                href="#" target="_blank">
+                Shop all best seller
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="h-4 w-4" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </a>
+        </header>
+        <section id="initial-products" class="" aria-label="best-sellers-heading">
+            <div class="desktop-scroll-wrapper sm:overflow-x-auto">
+                <ul class="product-grid grid 
+                grid-cols-2 gap-4 sm:w-max sm:grid-cols-[repeat(10,minmax(271px,1fr))] 
+                lg:w-auto lg:gap-6" aria-expanded="false">
+                    <!-- <ul class="product-grid sm:w-max grid grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-6"> -->
+                    <!-- card 1 -->
+                    <li class="relative">
+                        <article class="group flex flex-col" data-product>
+                            <div class="block rounded-2xl overflow-hidden relative product-img-wrap aspect-square mb-3">
+                                <span
+                                    class="absolute top-2 left-2 z-10 bg-black text-white text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">
+                                    Best Seller
+                                </span>
+                                <img src="Images/headphone-1.jpg" alt="Headphones on yellow background" class="img-primary w-full h-full object-cover absolute inset-0 opacity-1 transition-opacity duration-[350ms] ease
+                                group-focus-visible:opacity-0 group-hover:opacity-0" />
+                                <img src="Images/headphone.jpg" alt="Headphones alternate view" class="img-secondary w-full h-full object-cover absolute opacity-0 transition-opacity 
+                                duration-[350ms] ease-out inset-0 group-hover:opacity-100 
+                                group-focus-within:opacity-100" aria-hidden="true" />
+                            </div>
+                            <div class="flex flex-col gap-1 px-0.5">
+                                <h3 class="text-xs font-bold uppercase tracking-wide leading-snug">Outside Vibes T-Shirt
+                                    <a href="#" aria-labelledby=""
+                                        class="after:content-[''] after:absolute after:left-0 after:bottom-0 after:top-0 after:right-0">Sunshine</a>
+                                </h3>
+                                <div class="flex items-center gap-1"
+                                    aria-label="Rated 4 out of 5 stars based on 1,234 reviews">
+                                    <span class="star text-sm" aria-hidden="true">★★★★☆</span>
+                                    <span class="sr-only">4 out of 5 stars</span>
+                                    <span class="text-xs text-gray-500 ml-1">1,234 Reviews</span>
+                                </div>
+                                <p class="text-sm font-semibold">$104.95</p>
+                            </div>
+                        </article>
+                    </li>
+
+                    <!-- card 2 -->
+                    <li class="relative">
+                        <article class="group flex flex-col" data-product>
+                            <div class="block rounded-2xl overflow-hidden relative product-img-wrap aspect-square mb-3">
+                                <span
+                                    class="absolute top-2 left-2 z-10 bg-black text-white text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">
+                                    Best Seller
+                                </span>
+                                <img src="Images/headphone-1.jpg" alt="Headphones on yellow background" class="img-primary w-full h-full object-cover absolute inset-0 opacity-1 transition-opacity duration-[350ms] ease
+                                group-focus-visible:opacity-0 group-hover:opacity-0" />
+                                <img src="Images/headphone.jpg" alt="Headphones alternate view" class="img-secondary w-full h-full object-cover absolute opacity-0 transition-opacity 
+                                duration-[350ms] ease-out inset-0 group-hover:opacity-100 
+                                group-focus-within:opacity-100" aria-hidden="true" />
+                            </div>
+                            <div class="flex flex-col gap-1 px-0.5">
+                                <h3 class="text-xs font-bold uppercase tracking-wide leading-snug">Outside Vibes T-Shirt
+                                    <a href="#" aria-labelledby=""
+                                        class="after:content-[''] after:absolute after:left-0 after:bottom-0 after:top-0 after:right-0">Sunshine</a>
+                                </h3>
+                                <div class="flex items-center gap-1"
+                                    aria-label="Rated 4 out of 5 stars based on 1,234 reviews">
+                                    <span class="star text-sm" aria-hidden="true">★★★★☆</span>
+                                    <span class="sr-only">4 out of 5 stars</span>
+                                    <span class="text-xs text-gray-500 ml-1">1,234 Reviews</span>
+                                </div>
+                                <p class="text-sm font-semibold">$104.95</p>
+                            </div>
+                        </article>
+                    </li>
+
+                    <!-- card 3 -->
+                    <li class="relative">
+                        <article class="group flex flex-col" data-product>
+                            <div class="block rounded-2xl overflow-hidden relative product-img-wrap aspect-square mb-3">
+                                <span
+                                    class="absolute top-2 left-2 z-10 bg-black text-white text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">
+                                    Best Seller
+                                </span>
+                                <img src="Images/headphone-1.jpg" alt="Headphones on yellow background" class="img-primary w-full h-full object-cover absolute inset-0 opacity-1 transition-opacity duration-[350ms] ease
+                                group-focus-visible:opacity-0 group-hover:opacity-0" />
+                                <img src="Images/headphone.jpg" alt="Headphones alternate view" class="img-secondary w-full h-full object-cover absolute opacity-0 transition-opacity 
+                                duration-[350ms] ease-out inset-0 group-hover:opacity-100 
+                                group-focus-within:opacity-100" aria-hidden="true" />
+                            </div>
+                            <div class="flex flex-col gap-1 px-0.5">
+                                <h3 class="text-xs font-bold uppercase tracking-wide leading-snug">Outside Vibes T-Shirt
+                                    <a href="#" aria-labelledby=""
+                                        class="after:content-[''] after:absolute after:left-0 after:bottom-0 after:top-0 after:right-0">Sunshine</a>
+                                </h3>
+                                <div class="flex items-center gap-1"
+                                    aria-label="Rated 4 out of 5 stars based on 1,234 reviews">
+                                    <span class="star text-sm" aria-hidden="true">★★★★☆</span>
+                                    <span class="sr-only">4 out of 5 stars</span>
+                                    <span class="text-xs text-gray-500 ml-1">1,234 Reviews</span>
+                                </div>
+                                <p class="text-sm font-semibold">$104.95</p>
+                            </div>
+                        </article>
+                    </li>
+
+                    <!-- card 4 -->
+                    <li class="relative">
+                        <article class="group flex flex-col" data-product>
+                            <div class="block rounded-2xl overflow-hidden relative product-img-wrap aspect-square mb-3">
+                                <span
+                                    class="absolute top-2 left-2 z-10 bg-black text-white text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">
+                                    Best Seller
+                                </span>
+                                <img src="Images/headphone-1.jpg" alt="Headphones on yellow background" class="img-primary w-full h-full object-cover absolute inset-0 opacity-1 transition-opacity duration-[350ms] ease
+                                group-focus-visible:opacity-0 group-hover:opacity-0" />
+                                <img src="Images/headphone.jpg" alt="Headphones alternate view" class="img-secondary w-full h-full object-cover absolute opacity-0 transition-opacity 
+                                duration-[350ms] ease-out inset-0 group-hover:opacity-100 
+                                group-focus-within:opacity-100" aria-hidden="true" />
+                            </div>
+                            <div class="flex flex-col gap-1 px-0.5">
+                                <h3 class="text-xs font-bold uppercase tracking-wide leading-snug">Outside Vibes T-Shirt
+                                    <a href="#" aria-labelledby=""
+                                        class="after:content-[''] after:absolute after:left-0 after:bottom-0 after:top-0 after:right-0">Sunshine</a>
+                                </h3>
+                                <div class="flex items-center gap-1"
+                                    aria-label="Rated 4 out of 5 stars based on 1,234 reviews">
+                                    <span class="star text-sm" aria-hidden="true">★★★★☆</span>
+                                    <span class="sr-only">4 out of 5 stars</span>
+                                    <span class="text-xs text-gray-500 ml-1">1,234 Reviews</span>
+                                </div>
+                                <p class="text-sm font-semibold">$104.95</p>
+                            </div>
+                        </article>
+                    </li>
+
+                    <!-- card 5 -->
+                    <li class="relative extra-products">
+                        <article class="group flex flex-col" data-product>
+                            <div class="block rounded-2xl overflow-hidden relative product-img-wrap aspect-square mb-3">
+                                <span
+                                    class="absolute top-2 left-2 z-10 bg-black text-white text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">
+                                    Best Seller
+                                </span>
+                                <img src="Images/headphone-1.jpg" alt="Headphones on yellow background" class="img-primary w-full h-full object-cover absolute inset-0 opacity-1 transition-opacity duration-[350ms] ease
+                                group-focus-visible:opacity-0 group-hover:opacity-0" />
+                                <img src="Images/headphone.jpg" alt="Headphones alternate view" class="img-secondary w-full h-full object-cover absolute opacity-0 transition-opacity 
+                                duration-[350ms] ease-out inset-0 group-hover:opacity-100 
+                                group-focus-within:opacity-100" aria-hidden="true" />
+                            </div>
+                            <div class="flex flex-col gap-1 px-0.5">
+                                <h3 class="text-xs font-bold uppercase tracking-wide leading-snug">Outside Vibes T-Shirt
+                                    <a href="#" aria-labelledby=""
+                                        class="after:content-[''] after:absolute after:left-0 after:bottom-0 after:top-0 after:right-0">Sunshine</a>
+                                </h3>
+                                <div class="flex items-center gap-1"
+                                    aria-label="Rated 4 out of 5 stars based on 1,234 reviews">
+                                    <span class="star text-sm" aria-hidden="true">★★★★☆</span>
+                                    <span class="sr-only">4 out of 5 stars</span>
+                                    <span class="text-xs text-gray-500 ml-1">1,234 Reviews</span>
+                                </div>
+                                <p class="text-sm font-semibold">$104.95</p>
+                            </div>
+                        </article>
+                    </li>
+
+                    <!-- card 6 -->
+                    <li class="relative extra-products">
+                        <article class="group flex flex-col" data-product>
+                            <div class="block rounded-2xl overflow-hidden relative product-img-wrap aspect-square mb-3">
+                                <span
+                                    class="absolute top-2 left-2 z-10 bg-black text-white text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">
+                                    Best Seller
+                                </span>
+                                <img src="Images/headphone-1.jpg" alt="Headphones on yellow background" class="img-primary w-full h-full object-cover absolute inset-0 opacity-1 transition-opacity duration-[350ms] ease
+                                group-focus-visible:opacity-0 group-hover:opacity-0" />
+                                <img src="Images/headphone.jpg" alt="Headphones alternate view" class="img-secondary w-full h-full object-cover absolute opacity-0 transition-opacity 
+                                duration-[350ms] ease-out inset-0 group-hover:opacity-100 
+                                group-focus-within:opacity-100" aria-hidden="true" />
+                            </div>
+                            <div class="flex flex-col gap-1 px-0.5">
+                                <h3 class="text-xs font-bold uppercase tracking-wide leading-snug">Outside Vibes T-Shirt
+                                    <a href="#" aria-labelledby=""
+                                        class="after:content-[''] after:absolute after:left-0 after:bottom-0 after:top-0 after:right-0">Sunshine</a>
+                                </h3>
+                                <div class="flex items-center gap-1"
+                                    aria-label="Rated 4 out of 5 stars based on 1,234 reviews">
+                                    <span class="star text-sm" aria-hidden="true">★★★★☆</span>
+                                    <span class="sr-only">4 out of 5 stars</span>
+                                    <span class="text-xs text-gray-500 ml-1">1,234 Reviews</span>
+                                </div>
+                                <p class="text-sm font-semibold">$104.95</p>
+                            </div>
+                        </article>
+                    </li>
+
+                    <!-- card 7 -->
+                    <li class="relative extra-products">
+                        <article class="group flex flex-col" data-product>
+                            <div class="block rounded-2xl overflow-hidden relative product-img-wrap aspect-square mb-3">
+                                <span
+                                    class="absolute top-2 left-2 z-10 bg-black text-white text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">
+                                    Best Seller
+                                </span>
+                                <img src="Images/headphone-1.jpg" alt="Headphones on yellow background" class="img-primary w-full h-full object-cover absolute inset-0 opacity-1 transition-opacity duration-[350ms] ease
+                                group-focus-visible:opacity-0 group-hover:opacity-0" />
+                                <img src="Images/headphone.jpg" alt="Headphones alternate view" class="img-secondary w-full h-full object-cover absolute opacity-0 transition-opacity 
+                                duration-[350ms] ease-out inset-0 group-hover:opacity-100 
+                                group-focus-within:opacity-100" aria-hidden="true" />
+                            </div>
+                            <div class="flex flex-col gap-1 px-0.5">
+                                <h3 class="text-xs font-bold uppercase tracking-wide leading-snug">Outside Vibes T-Shirt
+                                    <a href="#" aria-labelledby=""
+                                        class="after:content-[''] after:absolute after:left-0 after:bottom-0 after:top-0 after:right-0">Sunshine</a>
+                                </h3>
+                                <div class="flex items-center gap-1"
+                                    aria-label="Rated 4 out of 5 stars based on 1,234 reviews">
+                                    <span class="star text-sm" aria-hidden="true">★★★★☆</span>
+                                    <span class="sr-only">4 out of 5 stars</span>
+                                    <span class="text-xs text-gray-500 ml-1">1,234 Reviews</span>
+                                </div>
+                                <p class="text-sm font-semibold">$104.95</p>
+                            </div>
+                        </article>
+                    </li>
+
+                    <!-- card 8 -->
+                    <li class="relative extra-products">
+                        <article class="group flex flex-col" data-product>
+                            <div class="block rounded-2xl overflow-hidden relative product-img-wrap aspect-square mb-3">
+                                <span
+                                    class="absolute top-2 left-2 z-10 bg-black text-white text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">
+                                    Best Seller
+                                </span>
+                                <img src="Images/headphone-1.jpg" alt="Headphones on yellow background" class="img-primary w-full h-full object-cover absolute inset-0 opacity-1 transition-opacity duration-[350ms] ease
+                                group-focus-visible:opacity-0 group-hover:opacity-0" />
+                                <img src="Images/headphone.jpg" alt="Headphones alternate view" class="img-secondary w-full h-full object-cover absolute opacity-0 transition-opacity 
+                                duration-[350ms] ease-out inset-0 group-hover:opacity-100 
+                                group-focus-within:opacity-100" aria-hidden="true" />
+                            </div>
+                            <div class="flex flex-col gap-1 px-0.5">
+                                <h3 class="text-xs font-bold uppercase tracking-wide leading-snug">Outside Vibes T-Shirt
+                                    <a href="#" aria-labelledby=""
+                                        class="after:content-[''] after:absolute after:left-0 after:bottom-0 after:top-0 after:right-0">Sunshine</a>
+                                </h3>
+                                <div class="flex items-center gap-1"
+                                    aria-label="Rated 4 out of 5 stars based on 1,234 reviews">
+                                    <span class="star text-sm" aria-hidden="true">★★★★☆</span>
+                                    <span class="sr-only">4 out of 5 stars</span>
+                                    <span class="text-xs text-gray-500 ml-1">1,234 Reviews</span>
+                                </div>
+                                <p class="text-sm font-semibold">$104.95</p>
+                            </div>
+                        </article>
+                    </li>
+
+                    <!-- card 9 -->
+                    <li class="relative extra-products">
+                        <article class="group flex flex-col" data-product>
+                            <div class="block rounded-2xl overflow-hidden relative product-img-wrap aspect-square mb-3">
+                                <span
+                                    class="absolute top-2 left-2 z-10 bg-black text-white text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">
+                                    Best Seller
+                                </span>
+                                <img src="Images/headphone-1.jpg" alt="Headphones on yellow background" class="img-primary w-full h-full object-cover absolute inset-0 opacity-1 transition-opacity duration-[350ms] ease
+                                group-focus-visible:opacity-0 group-hover:opacity-0" />
+                                <img src="Images/headphone.jpg" alt="Headphones alternate view" class="img-secondary w-full h-full object-cover absolute opacity-0 transition-opacity 
+                                duration-[350ms] ease-out inset-0 group-hover:opacity-100 
+                                group-focus-within:opacity-100" aria-hidden="true" />
+                            </div>
+                            <div class="flex flex-col gap-1 px-0.5">
+                                <h3 class="text-xs font-bold uppercase tracking-wide leading-snug">Outside Vibes T-Shirt
+                                    <a href="#" aria-labelledby=""
+                                        class="after:content-[''] after:absolute after:left-0 after:bottom-0 after:top-0 after:right-0">Sunshine</a>
+                                </h3>
+                                <div class="flex items-center gap-1"
+                                    aria-label="Rated 4 out of 5 stars based on 1,234 reviews">
+                                    <span class="star text-sm" aria-hidden="true">★★★★☆</span>
+                                    <span class="sr-only">4 out of 5 stars</span>
+                                    <span class="text-xs text-gray-500 ml-1">1,234 Reviews</span>
+                                </div>
+                                <p class="text-sm font-semibold">$104.95</p>
+                            </div>
+                        </article>
+                    </li>
+
+                    <!-- card 10 -->
+                    <li class="relative extra-products">
+                        <article class="group flex flex-col" data-product>
+                            <div class="block rounded-2xl overflow-hidden relative product-img-wrap aspect-square mb-3">
+                                <span
+                                    class="absolute top-2 left-2 z-10 bg-black text-white text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">
+                                    Best Seller
+                                </span>
+                                <img src="Images/headphone-1.jpg" alt="Headphones on yellow background" class="img-primary w-full h-full object-cover absolute inset-0 opacity-1 transition-opacity duration-[350ms] ease
+                                group-focus-visible:opacity-0 group-hover:opacity-0" />
+                                <img src="Images/headphone.jpg" alt="Headphones alternate view" class="img-secondary w-full h-full object-cover absolute opacity-0 transition-opacity 
+                                duration-[350ms] ease-out inset-0 group-hover:opacity-100 
+                                group-focus-within:opacity-100" aria-hidden="true" />
+                            </div>
+                            <div class="flex flex-col gap-1 px-0.5">
+                                <h3 class="text-xs font-bold uppercase tracking-wide leading-snug">Outside Vibes T-Shirt
+                                    <a href="#" aria-labelledby=""
+                                        class="after:content-[''] after:absolute after:left-0 after:bottom-0 after:top-0 after:right-0">Sunshine</a>
+                                </h3>
+                                <div class="flex items-center gap-1"
+                                    aria-label="Rated 4 out of 5 stars based on 1,234 reviews">
+                                    <span class="star text-sm" aria-hidden="true">★★★★☆</span>
+                                    <span class="sr-only">4 out of 5 stars</span>
+                                    <span class="text-xs text-gray-500 ml-1">1,234 Reviews</span>
+                                </div>
+                                <p class="text-sm font-semibold">$104.95</p>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+            <div class="show-more-wrap">
+                <button id="show-more-btn" class="show-more-btn" aria-expanded="false">
+                    Show More
+                </button>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="custom.js" async defer></script>
 </body>
 
 </html>
